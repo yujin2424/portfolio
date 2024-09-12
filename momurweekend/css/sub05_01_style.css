@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.h_bg{
+    background: url(../img/sub05/info_img_1.jpg) no-repeat center /cover;
+
+}
+
+.sub_c{
+    margin-bottom: 3%;
+}
+.row_c h4{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+#sub_05{
+    display: flex;
+}
+.if_img{
+    width: 30%;
+    margin: 0 1%;
+}
+.if_img ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.if_img ul li{
+    margin: 10px 0;
+    flex-grow: 1;
+}
+.if_img ul li img{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+.if_text{
+    width: 68%;
+    display: flex;
+    align-items: center;
+}
+.if_text .if_text_p{
+    margin: 7% 0;
+    font-size: 14px;
+}
+.if_text_p .title{
+    margin-bottom: 2%;
+}
+@media screen and (max-width:1000px){
+    .if_text .if_text_p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:800px) {
+    #sub_05{
+        flex-direction: column;
+    }
+    .if_img ul{
+        flex-direction: row;
+    }
+    .if_img{
+        width: auto;
+    }
+    .if_text {
+        text-align: center;
+        padding-left: 16%;
+}
+ 
+}
+@media screen and (max-width:600px) {
+    .if_text .if_text_p{
+        margin: 8% 0;
+    }
+}
+@media screen and (max-width:400px) {
+    .if_text .if_text_p{
+        margin: 9% 0;
+    }
+}

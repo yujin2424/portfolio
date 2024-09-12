@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momurweekend - images</title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery.1.11.0.min.js"></script>
+    
+    <script src="js/navi.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    //jQuery 시작
+    $(function(){
+             $('.pt_img li .top_item').click(function(){
+                $(this).parent().toggleClass('on');
+                $('.pt_img li .top_item').not(this).parent().removeClass('on');
+                $(this).find('+.swiper').slideToggle('fast');
+                $('.pt_img li .top_item').not(this).find('+.swiper').slideUp('fast');
+             });
+    }); //jQuery 종료
+</script>
+
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <link rel="stylesheet" href="css/sub04_01_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple touch icon precomposed" href="img/main/PC_Main/momur_favicon.png">
+
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="img/main/PC_Main/momur_favicon.png">
+</head>
+<body>
+    <!-- momurweekend main -->
+    
+        <!-- header 불러오기 -->
+        <? include "header.html" ?>
+
+    <!-- 서브페이지 -->
+<div id="sub_images">
+    <div class="h_bg">
+        <div class="row_c">
+            <h2>PHOTO</h2>
+            <h3>Images</h3>
+        </div>
+    </div>
+    <div class="sub_c row_c">
+        <div class="row_c">
+            <h4>Images</h4>
+        </div>
+    </div>
+    <div class="pt_img">
+        <ul>
+            <li>
+                <div class="top_item">
+                <img src="img/sub04/images_img_2.jpg" alt="img 01">
+                    <div class="top_item_text">
+                        <strong>WEEKEND 1</strong>
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper sl1">
+                    <ul class="p_img swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_5.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_6.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_7.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_8.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_9.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_10.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_11.jpg" alt="sub img 01"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_12.jpg" alt="sub img 01"></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><div class="top_item"><img src="img/sub04/images_img_3.jpg" alt="img 02">
+                <div class="top_item_text">
+                    <strong>WEEKEND 2</strong>
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+            </div>
+
+            <div class="swiper sl1">
+                <ul class="p_img swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_13.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_14.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_15.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_16.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_17.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_18.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_19.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_20.jpg" alt="sub img 01"></a></li>
+                </ul>
+            </div>
+                
+            </li>
+            <li><div class="top_item"><img src="img/sub04/images_img_4.jpg" alt="img 03">
+                <div class="top_item_text">
+                    <strong>WEEKEND 3</strong>
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+            </div>
+            <div class="swiper sl1">
+                <ul class="p_img swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_21.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_22.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_23.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_24.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_25.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_26.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_27.jpg" alt="sub img 01"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/sub04/images_img_28.jpg" alt="sub img 01"></a></li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<? include "footer.html" ?>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.sl1', {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      //slidesPerGroup: 3,
+      loop: true,
+     
+      //반응형 해상도에 따른 슬라이드 개수 제어
+      breakpoints:{
+        900:{
+            slidesPerView: 5,
+            spaceBetween: 30,    
+        },
+        620:{
+            slidesPerView: 3,
+            spaceBetween: 30,    
+        },
+        
+        320:{
+            slidesPerView: 2,
+            spaceBetween: 10,    
+        },
+      } //end breakpoints
+      
+    });
+
+  </script>
+</body>
+</html>

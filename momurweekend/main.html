@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momurweekend main</title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery.1.11.0.min.js"></script>
+    
+    <script src="js/navi.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+
+<script>
+    //jQuery 시작
+    $(function(){
+        $('#mb_navi').mCustomScrollbar({theme:"dark-thin"});       
+
+    }); //jQuery 종료
+</script>
+
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/momurweekend_main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple_touch_icon_precomposed" href="img/main/PC_Main/momur_favicon.png">
+
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="img/main/PC_Main/momur_favicon.png">
+</head>
+<body>
+    <!-- momurweekend main -->
+    
+    <header class="active">
+        <div id="navi_wrap">
+        <div id="logo">
+            <a href="http://yuyujinport42.dothome.co.kr/momurweekend/main.html"><img src="http://yuyujinport42.dothome.co.kr/momurweekend/img/main/PC_Main/logo_image.png" alt="momur"></a>
+        </div>
+        <div id="mb_btn">
+            <img src="http://yuyujinport42.dothome.co.kr/momurweekend/img/main/Mobile_Main/menu_icon_mm.png" alt="메뉴">
+        </div>
+
+        <div id="navi">
+            <ul>
+                <li><a href="#">BRAND</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub01_01.html">About</a></li>
+                        </ul>
+                    </nav>   
+                </li>
+                <li><a href="#">SHOP</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub02_01.html">Item</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+                <li><a href="#">EVENT</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub03_01.html">Sale</a></li>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub03_01.html">News</a></li>
+                        </ul>
+                    </nav> </li>
+                <li><a href="#">PHOTO</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub04_01.html">Images</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+                <li><a href="#">BOARD</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub05_01.html">Info</a></li>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub05_01.html">Review</a></li>
+                            <li><a href="http://yuyujinport42.dothome.co.kr/xe/sub05_03_qna">Q&A</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+            </ul>
+        </div>
+        <form id="sh_f" action="#" method="get">
+            <ul>
+                <li>
+                    <input type="image" src="http://yuyujinport42.dothome.co.kr/momurweekend/img/main/PC_Main/search_icon.png" alt="검색" id="sh_btn">
+                </li>
+                <li>
+                    <input type="search" name="sc_bar" id="sc_bar" placeholder="검색어를 입력하세요." required pattern="" title="">
+                </li>
+            </ul>
+        </form>
+        <div id="login">
+            <ul>
+                <li><a href="#">Log-in</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        </div><!-- navi_wrap -->
+     <div id="navi_bg"></div>   
+    </header>
+    <!-- 모바일 네비게이션 어두운 배경, 닫기 버튼 -->
+    <div id="mb_navi_bg">
+        
+    </div>
+
+    <!-- 모바일 네비게이션 복사 영역 -->
+    <div id="mb_navi">
+        <div class="mb_close">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+        <nav class="mb_navi_wrap">
+            <!-- pc:#navi => mobile navi copy : .mb_navi_wrap 안의 ul -->
+        </nav>
+    </div>
+
+<div id="main">
+    <div class="page_01">
+               
+            <div class="mp_01 slide swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="bg_img">
+                            <figure>
+                                <div class="img_group_01">
+                                    <span>[Weekend2]set</span>
+                                </div>
+                                <img src="img/main/PC_Main/page1_bg_01.jpg" alt="배경01">
+                            </figure>
+                        </div>
+                        
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="bg_img">
+                            <figure>
+                                <div class="img_group_02">
+                                    <span>[Weekend4]set</span>
+                                </div>
+                            <img src="img/main/PC_Main/page1_bg_02.jpg" alt="배경02">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="bg_img">
+                            <figure>
+                                <div class="img_group_03">
+                                    <span>[Weekend2]set</span>
+                                </div>
+                            <img src="img/main/PC_Main/page1_bg_03.jpg" alt="배경03">
+                            </figure>
+                        </div>
+                    </li>
+                   
+                </ul>
+
+                <div class="mp_btn">
+                    <div class="ps_btn">
+                        <ul>
+                            <li><span class="mp_prev">◀PREV</span></li>
+                            <li class="play_stop">멈춤</li>
+                            <li><span class="mp_next">NEXT▶</span></li>
+                        </ul>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination btn_bullet"></div> 
+                </div>
+
+            </div>
+    </div><!-- page_01 -->
+    <div class="page_02">
+        <div class="row_c">
+            <hgroup>
+            <h4><i>"monurweekend"</i> 네가지원칙</h4>
+            <h5>우리는 <b>'네가지 원칙'</b>을 중시하고 있습니다.</h5>
+            </hgroup>
+                <div id="mp_02">
+                    <ul>
+
+                        <li>
+                            <figure>
+                                <img src="img/main/PC_Main/page_2_icon_01.png" alt="아이콘01">
+                            </figure>
+                            <a href="#">
+                            <strong>
+                                자연성분의 재료
+                            </strong>
+                                <p>
+                                <span>인체에 무해하고 높은 방수성을 지닌</span>
+                                <span>'세라믹'재료를 가지고 만듭니다.</span>
+                            </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="img/main/PC_Main/page_2_icon_02.png" alt="아이콘02">
+                            </figure>
+                            <a href="#">
+                            <strong>
+                                정성으로 만드는 도자기
+                            </strong>
+                                <p>
+                                <span>일상의 가정에서 쓴다는 생각으로 하나씩</span>
+                                <span>도자기 정성을 다해 만들고 있습니다.</span>
+                            </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="img/main/PC_Main/page_2_icon_03.png" alt="아이콘03">
+                                </figure>
+                                <a href="#">
+                            <strong>
+                                위켄드만의 트렌디한 스타일
+                            </strong>
+                                <p>
+                                <span>모머위켄드만의 감각적인 트렌디하고</span>
+                                <span>스타일리쉬한 식기세트를 제작합니다.</span>
+                            </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="img/main/PC_Main/page_2_icon_04.png" alt="아이콘04">
+                            </figure>
+                            <a href="#">
+                            <strong>
+                                기분좋은 일상의 식사
+                            </strong>
+                                <p>
+                                <span>모머위켄드는 일상에서의 식사가 즐겁고</span>
+                                <span>유쾌하길 바라는 의미를 담고 있습니다.</span>
+                            </p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div> 
+            </div><!-- row_c -->
+    </div><!-- page_02 -->
+    <div class="page_03">
+
+            <div id="mp_03">
+                
+                <div class="hgroup">
+                <div class="title">
+                    <h2>WEEKEND</h2>
+                    <h3>PROJECT</h3>
+                </div>
+                <div class="sub_title">
+                <h5>공방에서 직접 구워</h5> <h5>만드는 과정을 알아보세요.</h5>
+                <p>하나씩 소중하게 완성되는 우리의 공방 스토리.</p>
+                <p>제품을 정성들여 제작하는 우리의 공방을 소개합니다.</p>
+                </div>
+                </div>
+                <div class="button">
+                    <a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub01_01.html">과정 알아보기</a>
+                </div>
+<!--                 <figure>
+                    <img src="img/main/PC_Main/plate_book.png" alt="접시배경 투명">
+                </figure> -->
+            </div>
+            <div class="mask_bg_01">
+                <img src="img/main/PC_Main/mask_img.jpg" alt="마스크 배경 01">
+            </div> 
+            <div class="mask_bg_02">
+                <img src="img/main/PC_Main/mask_img.jpg" alt="마스크 배경 02">
+            </div>
+    </div><!-- page_03 -->
+
+    <div id="middle">
+        <div class="middle_banner">
+            <p>"everyday Weekend" that melts into your daily life."</p>
+        </div>
+    </div>
+    <div class="page_04">
+        <div class="row_c">
+        <div id="mp_04">
+            <h2>공지사항</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/PC_Main/board_img_1.jpg" alt="공지사항 1">
+                        </figure>
+                        <div class="text_br">
+                            <strong>
+                                제품 사용 관련
+                            </strong>
+                            <p>
+                                <span>제품을 사용할 때 관련 설명 공지입니다.</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+ 
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/PC_Main/bd_img_2.jpg" alt="공지사항 2">
+                        </figure>
+                        <div class="text_br">
+                            <strong>
+                                주문 및 배송
+                            </strong>
+                            <p>
+                                <span>제품의 주문과 배송 설명 공지입니다.</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/PC_Main/board_img_3.jpg" alt="공지사항 3">
+                        </figure>
+                        <div class="text_br">
+                            <strong>
+                            제품 사용 관련
+                            </strong>
+                            <p>
+                                <span>제품의 교환 및 반품 관련 설명 공지입니다.</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="button">
+                <a href="http://yuyujinport42.dothome.co.kr/momurweekend/sub05_01.html">더보기 +</a>
+            </div>
+        </div>   
+    </div>
+    </div>
+    <div class="page_05">
+        <div class="row_c">
+            <div id="mp_05">
+                <h2>Instagram</h2>
+                
+                <div id="sns" class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_1.jpg" alt="포스터 01">
+                                </div>
+                                <div class="sns_text">
+                                    <h3>모머위켄드 팝업스토어 안내</h3>
+                                    <h4>밀크 머그컵 증정 프로모션</h4>
+                                    <time datetime="2024-03-11">2024.02.27(화) - 2024.03.11(월)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_2.jpg" alt="포스터 02">
+                                </div>
+                                <div class="sns_text">
+                                    <h3>29CM 이굿홈위크 마지막날 안내</h3>
+                                    <h4>슈퍼마켓 오발 플레이트 버터 제품 판매</h4>
+                                    <time datetime="2024-02-10">2024.01.22(월) - 2024.02.10(토)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+                    
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_3.jpg" alt="포스터 03">
+                                </div>
+                                <div class="sns_text">
+                                    <h3>29CM 이굿홈위크 첫날 행사 안내</h3>
+                                    <h4>모머위켄드 전상품 대규모 할인 행사</h4>
+                                    <time datetime="2024-02-10">22024.01.22(월) - 2024.02.10(토)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_4.jpg" alt="포스터 04">
+                                </div>
+                                <div class="sns_text">
+                                    <h3>29CM 이굿홈위크 행사 안내</h3>
+                                    <h4>모머위켄드 첫 입점  세일 행사</h4>
+                                    <time datetime="2024-02-10">2024.01.22(월) - 2024.02.10(토)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_5.jpg" alt="포스터 05">
+                                </div>
+                                <div class="sns_text">
+                                <h3>모머위켄드 밀크 머그컵 소개</h3>
+                                <h4>버터 컬러 리미티드 에디션 스토어</h4>
+                                    <time datetime="2024-03-11">2024.02.27(화) - 2024.03.11(월)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_4.jpg" alt="포스터 04">
+                                </div>
+                                <div class="sns_text">
+                                    <h3>29CM 이굿홈위크 행사 안내</h3>
+                                    <h4>모머위켄드 첫 입점  세일 행사</h4>
+                                    <time datetime="2024-02-10">2024.01.22(월) - 2024.02.10(토)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top_blue"></div>
+                                <div class="sns_bs">
+                                    <img src="img/main/PC_Main/sns_poster_5.jpg" alt="포스터 05">
+                                </div>
+                                <div class="sns_text">
+                                <h3>모머위켄드 밀크 머그컵 소개</h3>
+                                <h4>버터 컬러 리미티드 에디션 스토어</h4>
+                                    <time datetime="2024-03-11">2024.02.27(화) - 2024.03.11(월)</time>
+                                </div>
+                                    
+                            </a>
+                        </li>
+                    </ul>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination sns_bullet"></div>
+                        
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next sns_next">
+                            <img src="img/main/PC_Main/click_btn_2.png" alt="오른쪽 버튼">
+                            </div>
+                        <div class="swiper-button-prev sns_prev"><img src="img/main/PC_Main/click_btn_1.png" alt="왼쪽 버튼"></div>
+                </div><!--sns  swiper -->
+                
+            </div><!-- mp_05 -->
+        </div><!-- row_c -->
+    </div><!-- page_05 -->
+    <div id="footer">
+        <div class="row_c">
+            <div class="left">
+                <div id="first">
+                <p>
+                상호: 마지 대표:김지혜
+                </p>
+                <p>
+                개인정보관리자: 전상영 전화: 02-6085-1271 이메일: herewegong@naver.com
+                </p>
+                </div>
+                <div id="second">
+                <p>
+                주소: 서울특별시 마포구 잔다로 127-1 5층 사업자등록번호: 689-08-00570    
+                </p>
+                <p>
+                통신판매: 2020-서울마포-3897 호스팅제공자: (주)식스샵
+                </p>
+                </div>
+            </div><!-- left -->
+            <div class="right">
+                <ul>
+                <li>
+                    <a href="#">안전구매(에스크로) 서비스 가맹점</a>
+                </li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">사업자 정보확인</a></li> 
+                      
+                    
+                
+                </ul>
+                <p>
+                        ALL RIGHTS RESERVED ⓒ 2007 THE SIXSHOP CO. LT
+                 </p>
+            </div><!-- right --> 
+        </div><!-- row_c -->
+        
+    </div><!-- footer -->
+</div><!-- main -->
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#sns', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      //slidesPerGroup: 3,
+      loop: true,
+      //loopFillGroupWithBlank: true,
+     /* autoplay: { 
+        delay: 4000,
+      }, */
+      pagination: {
+        el: '.sns_bullet',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.sns_next',
+        prevEl: '.sns_prev',
+      },
+      
+      centeredSlides:true,
+      //반응형 해상도에 따른 슬라이드 개수 제어
+      breakpoints:{
+        900:{
+            slidesPerView: 3,
+            spaceBetween: 30,    
+        },
+        620:{
+            slidesPerView: 2,
+            spaceBetween: 30,    
+        },
+        360:{
+            slidesPerView: 1,
+            spaceBetween: 20,    
+        },
+        320:{
+            slidesPerView: 1,
+            spaceBetween: 10,    
+        },
+      } //end breakpoints
+      
+    });
+
+    var swiper2 = new Swiper('.mp_01', {
+      slidesPerView: 1,
+      spaceBetween:  0,
+      //slidesPerGroup: 3,
+      loop: true,
+      //loopFillGroupWithBlank: true,
+     autoplay: { 
+        delay: 3500,
+      },
+      pagination: {
+        el: '.btn_bullet',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.mp_next',
+        prevEl: '.mp_prev',
+      },
+      
+     
+      
+    });
+    $(function(){
+        $('.play_stop').click(function(){
+            $(this).toggleClass('on');
+            if($(this).hasClass('on')){
+                $(this).text('재생');
+                swiper2.autoplay.stop();
+            }else{
+                $(this).text('정지');
+                swiper2.autoplay.start();
+            }
+        });       
+    });
+  </script>
+
+</body>
+</html>

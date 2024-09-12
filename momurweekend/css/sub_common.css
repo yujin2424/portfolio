@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.h_bg{
+    height:400px;
+    background: url(../img/sub01/about_img_1.jpg) no-repeat center /cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.h_bg .row_c{
+    text-align: center;
+    margin-top: 100px;
+    color: #fff;
+}
+.h_bg .row_c h2{
+    font-size: 35px;
+}
+.h_bg .row_c h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .h_bg{
+        height:300px;
+    }
+}

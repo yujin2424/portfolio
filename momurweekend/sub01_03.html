@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momurweekend - about</title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery.1.11.0.min.js"></script>
+    
+    <script src="js/navi.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+
+<script>
+    //jQuery 시작
+    $(function(){
+        $('#mb_navi').mCustomScrollbar({theme:"dark-thin"});       
+
+    }); //jQuery 종료
+</script>
+
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  
+ 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <link rel="stylesheet" href="css/sub01_03_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple_touch_icon_precomposed" href="img/main/PC_Main/momur_favicon.png">
+
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="img/main/PC_Main/momur_favicon.png">
+</head>
+<body>
+    <!-- momurweekend main -->
+    
+    <header class="active">
+        <div id="navi_wrap">
+        <div id="logo">
+            <a href="#"><img src="img/main/PC_Main/logo_image.png" alt="momur"></a>
+        </div>
+        <div id="mb_btn">
+            <img src="img/main/Mobile_Main/menu_icon_mm.png" alt="메뉴">
+        </div>
+
+        <div id="navi">
+            <ul>
+                <li><a href="#">BRAND</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </nav>   
+                </li>
+                <li><a href="#">SHOP</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+                <li><a href="#">EVENT</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </nav> </li>
+                <li><a href="#">PHOTO</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="#">Images</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+                <li><a href="#">BOARD</a>
+                    <nav class="sub_navi">
+                        <ul>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </nav> 
+                </li>
+            </ul>
+        </div>
+        <form id="sh_f" action="#" method="get">
+            <ul>
+                <li>
+                    <input type="image" src="img/main/PC_Main/search_icon.png" alt="검색" id="sh_btn">
+                </li>
+                <li>
+                    <input type="search" name="sc_bar" id="sc_bar" placeholder="검색어를 입력하세요." required pattern="" title="">
+                </li>
+            </ul>
+        </form>
+        <div id="login">
+            <ul>
+                <li><a href="#">Log-in</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        </div><!-- navi_wrap -->
+
+     <div id="navi_bg">
+     </div>   
+    </header>
+    <!-- 모바일 네비게이션 어두운 배경, 닫기 버튼 -->
+    <div id="mb_navi_bg">
+        
+    </div>
+
+    <!-- 모바일 네비게이션 복사 영역 -->
+    <div id="mb_navi">
+        <div class="mb_close">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+        <nav class="mb_navi_wrap">
+            <!-- pc:#navi => mobile navi copy : .mb_navi_wrap 안의 ul -->
+        </nav>
+    </div>
+
+    <!-- 서브페이지 -->
+<div id="sub_about">
+    <div class="h_bg">
+        <div class="row_c">
+            <h2>EVENT</h2>
+            <h3>Sale</h3>
+        </div>
+    </div>
+    <div class="span_fn">
+        <span>모머위켄드의 할인소식을 알아보세요.</span>
+    </div>   
+    <div class="sub_c row_c">
+            <div class="row_c">
+                    <h4>Sale</h4>
+            </div>
+            <div class="sl_01">  
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_2.jpg" alt="접시01">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 2] 세트1 'Ivory'</h5>
+                                <span>150,700원 157,000원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_3.jpg" alt="접시02">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[ weekend 2 ] 세트1 'butter'</h5>
+                                <span>150,700원 157,000원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_4.jpg" alt="접시03">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 2] 세트2 'Ivory'</h5>
+                                <span>80,200원 84,500원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_5.jpg" alt="접시04">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 2] 세트2 'butter'</h5>
+                                <span>80,200원 84,500원</span>
+                            </div>
+                        </a>
+                    </li>
+                <ul>
+            </div>
+            <div class="sl_02">  
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_6.jpg" alt="접시05">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 6] 머그&시티볼 세트 'butter'</h5>
+                                <span>62,700원 66,000원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_7.jpg" alt="접시06">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 6] 머그&시티볼 세트 'Ivory'</h5>
+                                <span>62,700원 66,000원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_8.jpg" alt="접시07">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 6] 시티라이프 세트 'butter'</h5>
+                                <span>171,200원 180,300원</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_9.jpg" alt="접시08">
+                            </figure>
+                            <div class="sl_text">
+                                <h5>[weekend 6] 시티라이프 세트 'Ivory'</h5>
+                                <span>171,200원 180,300원</span>
+                            </div>
+                        </a>
+                    </li>
+                <ul>
+            </div>
+         
+            <div id="line">
+                <figure>
+                    <img src="img/sub03/sale_img_logo.png" alt="로고 이미지">
+                </figure>
+                <figcaption>"everyday Weekend" that melts into your daily life."</figcaption>
+            </div>
+            
+            <div class="best">
+                <div class="row_c">
+                    <h4>Best</h4>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_10.jpg" alt="접시09">
+                            </figure>
+                        <div class="bs_text">
+                            <h5>[weekend 6] 시티라이프 세트 'Ivory'</h5>
+                            <span>171,200원 180,300원</span> 
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_11.jpg" alt="접시10">
+                            </figure>
+                                <div class="bs_text">
+                                    <h5>[weekend 6] 시티라이프 세트 'Ivory'</h5>
+                                    <span>171,200원 180,300원</span> 
+                                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="best_nt">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_12.png" alt="접시11">
+                            </figure>
+                        <div class="bn_text">
+                            <h5>머그컵 & 와인잔</h5>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_13.png" alt="접시12">
+                            </figure>
+                                <div class="bn_text">
+                                    <h5>수프볼 & 소스볼</h5>
+                                </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img/sub03/sale_img_14.png" alt="접시13">
+                            </figure>
+                                <div class="bn_text">
+                                    <h5>플레이트</h5>
+                                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+</div>
+
+
+<div id="footer">
+    <div class="row_c">
+        <div class="left">
+            <div id="first">
+            <p>
+            상호: 마지 대표:김지혜
+            </p>
+            <p>
+            개인정보관리자: 전상영 전화: 02-6085-1271 이메일: herewegong@naver.com
+            </p>
+            </div>
+            <div id="second">
+            <p>
+            주소: 서울특별시 마포구 잔다로 127-1 5층 사업자등록번호: 689-08-00570    
+            </p>
+            <p>
+            통신판매: 2020-서울마포-3897 호스팅제공자: (주)식스샵
+            </p>
+            </div>
+        </div><!-- left -->
+        <div class="right">
+            <ul>
+            <li>
+                <a href="#">안전구매(에스크로) 서비스 가맹점</a>
+            </li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">사업자 정보확인</a></li> 
+                  
+                
+            
+            </ul>
+            <p>
+                    ALL RIGHTS RESERVED ⓒ 2007 THE SIXSHOP CO. LT
+             </p>
+        </div><!-- right --> 
+    </div><!-- row_c -->
+    
+</div><!-- footer -->
+  
+</body>
+</html>

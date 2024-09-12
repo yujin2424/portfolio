@@ -1,0 +1,44 @@
+@charset "utf-8";
+.h_bg{
+    background: url(http://yuyujinport42.dothome.co.kr/momurweekend/img/sub01/about_img_1.jpg) no-repeat center /cover;
+
+}
+
+.row_c h4{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+#sub_board{
+    border-collapse: collapse;
+    min-height: 500px;
+    margin-bottom: 135px;
+    text-align: center;
+}
+
+.board_list th{
+    border: 0;
+    border-bottom: double #DBDBDB;
+    padding: 14px 0 15px;
+    height: 30px;
+    white-space: nowrap;
+}
+.board_list td{
+    height: 45px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width:971px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    #sub_board{
+        min-height: 250px;
+        margin: 0 10px;
+        font-size: 15px;
+    }
+}
+
+    

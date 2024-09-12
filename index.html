@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <meta property="og:url" content="http://yuyujinport42.dothome.co.kr">
+  <meta property="og:title" content="유진의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/happiness_walk_preview.jpg">
+  <meta property="og:description" content="Happiness Walk Portfolio">
+  <title>유진의 포트폴리오</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/my_favicon_pf.png" rel="icon">
+  <link href="assets/img/my_favicon_pf.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ninestars - v2.0.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/circle-progress.js"></script>
+  <script>
+  $(function(){ //JQuery 시작
+
+var skillV = false; //그래프 애니메이션 적용 안된 상태
+var viewT = $('#services').offset().top - 200; //애니메이션 적용될 위치 값
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+
+    if(st > viewT && skillV == false){
+
+
+
+
+$('.second.circle').circleProgress({
+    thickness:10,
+    startAngle: -Math.PI/4*2,
+    lineCap: 'round',
+    fill:{color:'#505050'}
+}).on('circle-animation-progress', function(event, progress, stepValue) {
+$(this).find('strong').html(Math.round(stepValue * 100 * progress) + '<i>%</i>');
+});
+
+ 
+    skillV = true;
+        }//end if
+
+    });//end scroll
+});//JQuery 종료
+</script>
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>YJJ Portfolio</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li class="get-started"><a href="#about">About Me</a></li>
+          <li class="get-started"><a href="#services">Skill</a></li>
+          <li class="get-started"><a href="#portfolio">Portfolio</a></li>
+          <li class="get-started"><a href="#contact">Contact</a></li>
+
+          <!-- <li class="get-started"><a href="#about">Get Started</a></li> -->
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div class="hero_c_bg"></div>
+  <section id="hero" class="d-flex align-items-center"> 
+      <div class="hero_bg">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12 pt-5 pt-lg-0 order-2 order-lg-1 hero_title">
+          
+          <div class="tl_img">
+            <div class="tl_01"><img src="assets/img/picture/bg_icon.png" alt="tl_01"></div>
+            
+            </div>
+
+            <div class="title_01">
+            <h1 class="animated">Happiness Walk</h1>
+            <h2 class="animated">Web Portfolio</h2>
+            </div>
+          <!-- <h2>행복이 주어진 즐거운 느낌의 세상으로 건너가고 싶은 외계인입니다.</h2> -->
+          <a href="#about" class="btn-get-started scrollto">start</a>
+        </div>
+        <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        </div> -->
+      </div>
+    </div>
+  </div>
+  
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/my_profile.png" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up"><i class="material-symbols-outlined">🍀</i>소개</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+              <span>행복이 주어진 즐거운 느낌의 세상으로 건너가고 싶은 디자이너 지망생 이유진입니다. 저는 어떤 일을 할 때 행복하고 즐겁게 일한다면 언젠가 행운이 찾아온다라고 믿는 편입니다.
+                <br><br>
+                아무리 힘든 일이 있더라도 즐겁게 긍정적인 생활을 하는 노력을 한다면 현재에 대한 자신과 주변에게 집중할 수 있기 때문입니다.
+                <br><br>
+                그러다보면 자연스레 사소한 일에도 긍정적인 습관이 베이는 것 같습니다. 그렇기 때문에 ‘행복’이란 즐거운 기분을 챙기기 위해 해당 단어에 대한 의미를 종종 떠올려보고 있습니다.</span>
+            </p>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <i class="material-symbols-outlined">😃​</i>
+                <h4>긍정적인 의지</h4>
+                <p> 무슨 일이든 긍적적인 느낌과 함께 배움에 대한 의지를 발산하고 싶습니다.<br><br>일을 배우는 것에 대해 열정적으로 임하고 싶기 때문입니다.</p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <i class="material-symbols-outlined">🌱​</i>
+                <h4>행복이 가진 배려</h4> 
+                <p>내면이 행복한 사람은 타인에 대한 배려가 몸에 베어있는 것 같습니다.<br><br>그런 사람들처럼 먼저 타인에게 배려하는 습관을 들이고 싶습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skill Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Skill</h2> 
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class=""><img src="assets/img/icon/Photoshop_cc_icon.svg" alt=""></i></div>
+              <h4 class="title"><a href="">포토샵</a></h4>
+                  <div class="circle_wrap">
+                      <div class="second circle" data-value="0.8">
+                        <strong></strong>
+                        <!-- <span>animation <br> progress</span> -->
+                      </div>
+                  </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class=""><img src="assets/img/icon/Illustrator_cc_icon.svg" alt=""></i></div>
+              <h4 class="title"><a href="">일러스트</a></h4>
+
+                  <div class="second circle" data-value="0.8">
+                    <strong></strong>
+                    <!-- <span>animation <br> progress</span> -->
+                  </div>
+
+
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class=""><img src="assets/img/icon/figma_icon.svg" alt=""></i></div>
+              <h4 class="title"><a href="">피그마</a></h4>
+                  <div class="second circle" data-value="0.4">
+                    <strong></strong>
+                    <!-- <span>animation <br> progress</span> -->
+                  </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class=""><img src="assets/img/icon/XD_cc_icon.svg" alt=""></i></div>
+              <h4 class="title"><a href="">XD</a></h4>
+                  <div class="second circle" data-value="0.5">
+                    <strong></strong>
+                    <!-- <span>animation <br> progress</span> -->
+                  </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-oh">Other</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/momurweekend_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/momurweekend_main.jpg" data-gall="portfolioGallery" class="venobox" title="Momurweekend - 반응형웹/Main &amp; Sub 제작"><i class="icofont-plus-circle"></i></a>
+                <a href="momurweekend/main.html" target="_blank" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Momurweekend</h4>
+                <!-- <p>반응형웹/Main &amp; Sub 제작</p> -->
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/icon_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/icon_works.jpg" data-gall="portfolioGallery" class="venobox" title="메타포 아이콘"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>메타포 아이콘</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/home_screen_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/home_screen.jpg" data-gall="portfolioGallery" class="venobox" title="스마트폰 홈"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>스마트폰 홈</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/southern_korea_ preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/southern_korea.jpg" data-gall="portfolioGallery" class="venobox" title="한국남부발전"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>한국남부발전</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/banner_poster.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/banner_01.gif" data-gall="portfolioGallery" class="venobox" title="엘리멘탈 영화 배너"><i class="icofont-plus-circle"></i></a>
+                 
+              </div>
+              <div class="portfolio-info">
+                <h4>엘리멘탈 영화 배너</h4>
+                <p>Other</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pascucci_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/pascucci_main.jpg" data-gall="portfolioGallery" class="venobox" title="파스쿠찌"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>파스쿠찌</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/business_card_1_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/business_card_1.jpg" data-gall="portfolioGallery" class="venobox" title="도미노피자 명함"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>도미노피자 명함</h4>
+                <p>OTHER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/my_bookcover_2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Book_Mockup_1.jpg" data-gall="portfolioGallery" class="venobox" title="십자가 위의 악마 북커버"><i class="icofont-plus-circle"></i></a>
+                
+              </div>
+              <div class="portfolio-info">
+                <h4>십자가 위의 악마 북커버</h4>
+                <p>OTHER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/dulink_intro_preview.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/dulink_intro.gif" data-gall="portfolioGallery" class="venobox" title="듀링크 로고 인트로"><i class="icofont-plus-circle"></i></a>
+                 
+              </div>
+              <div class="portfolio-info">
+                <h4>듀링크 로고 인트로</h4>
+                <p>OTHER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/my_bookcover_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Book_Mockup_2.jpg" data-gall="portfolioGallery" class="venobox" title="북커버"><i class="icofont-plus-circle"></i></a>
+                 
+              </div>
+              <div class="portfolio-info">
+                <h4>좀, 게으르게 살아도 돼! 북커버</h4>
+                <p>OTHER</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-oh">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/my_package_01_preview.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/my_package_01.jpg" data-gall="portfolioGallery" class="venobox" title="북커버"><i class="icofont-plus-circle"></i></a>
+                 
+              </div>
+              <div class="portfolio-info">
+                <h4>농심 포스틱</h4>
+                <p>OTHER</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-7 contact_box d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>mimnin247@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>010-3095-1557</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+ 
+
+   
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yujin</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
